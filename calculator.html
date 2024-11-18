@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calulator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+
+    <div class="container">
+    <div class="main">
+        <div>
+            <input type="text" class="display" id="result" placeholder="0" disabled>
+        </div>
+        <div class="btn-box">
+            <button onclick="clearResult()" class="btna">AC</button>
+            <button onclick="deleteLast()" class="btna"><i class="fa-solid fa-delete-left"></i></button>
+            <button onclick="appendOperator('%')" class="btna">%</button>
+            <button onclick="appendOperator('/')" class="btn">/</button>
+
+            <button onclick="appendNumber('7')">7</button>
+            <button onclick="appendNumber('8')">8</button>
+            <button onclick="appendNumber('9')">9</button>
+            <button onclick="appendOperator('*')" class="btn">x</button>
+
+            <button onclick="appendNumber('4')">4</button>
+            <button onclick="appendNumber('5')">5</button>
+            <button onclick="appendNumber('6')">6</button>
+            <button onclick="appendOperator('-')" class="btn">-</button>
+
+            <button onclick="appendNumber('1')">1</button>
+            <button onclick="appendNumber('2')">2</button>
+            <button onclick="appendNumber('3')">3</button>
+            <button onclick="appendOperator('+')" class="btn">+</button>
+
+            <button onclick="appendNumber('0')" class="zero">0</button>
+            <button onclick="appendNumber('.')">.</button>
+            <button onclick="calculateResult('')" class="btnb">=</button>
+        </div>
+    </div>
+    </div>
+
+</body>
+<script src="index.js"></script>
+
+</html>
